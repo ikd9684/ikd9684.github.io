@@ -1,13 +1,78 @@
-<html>
+
+<!DOCTYPE html>
+<html lang="ja">
   <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ikd9684.github.io</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+        font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+        color: #222;
+        padding-top: 4vh;
+      }
+      .container {
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+        padding: 2.5rem 2rem 2rem 2rem;
+        text-align: center;
+        max-width: 350px;
+        margin: 2rem;
+      }
+      h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        letter-spacing: 0.02em;
+      }
+      .icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        margin-bottom: 1rem;
+        transition: transform 0.2s;
+      }
+      .icon:hover {
+        transform: scale(1.08) rotate(-6deg);
+      }
+      .desc {
+        font-size: 1.05rem;
+        color: #555;
+        margin-bottom: 1.2rem;
+      }
+      .links a {
+        display: inline-block;
+        margin: 0 0.5em;
+        color: #2563eb;
+        text-decoration: none;
+        font-weight: 500;
+        border-bottom: 1px solid #2563eb33;
+        transition: color 0.2s, border-bottom 0.2s;
+      }
+      .links a:hover {
+        color: #1e40af;
+        border-bottom: 2px solid #1e40af;
+      }
+    </style>
   </head>
-
   <body>
-    <h1>ikd9684.github.io</h1>
-
-    <img src="slack-icon(self).png" width="64">
-  
+    <div class="container">
+      <img src="slack-icon(self).png" alt="icon" class="icon">
+      <h1>ikd9684.github.io</h1>
+      <div class="desc"></div>
+      <div class="links">
+        <a href="https://github.com/ikd9684" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
   </body>
 </html>
